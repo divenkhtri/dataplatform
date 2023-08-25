@@ -32,13 +32,6 @@ const TransactionBottomRow = () => {
           <DataChart type={"pie"} data={doughnutChartData2} />
         </Paper>
       </Grid>
-
-      <Grid>
-        <Paper className={scss.dataCard}>
-          <p>Perferred Language</p>
-          <DataChart type={"pie"} data={doughnutChartData2} />
-        </Paper>
-      </Grid>
     </Grid>
   );
 };
