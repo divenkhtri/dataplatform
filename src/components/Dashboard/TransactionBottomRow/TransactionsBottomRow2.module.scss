@@ -6,6 +6,10 @@
   @media screen and (min-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .dataCard2 {
