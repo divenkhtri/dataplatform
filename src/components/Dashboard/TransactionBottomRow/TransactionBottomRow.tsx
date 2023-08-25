@@ -13,24 +13,32 @@ import scss from "./TransactionsBottomRow.module.scss";
 const TransactionBottomRow = () => {
   return (
     <Grid container className={scss.bottomRow}>
-      <Paper className={scss.dataCard}>
-        <p>State Distribution</p>
-        <DataChart type={"pie"} data={doughnutChartData4} />
-      </Paper>
+      <Grid>
+        <Paper className={scss.dataCard}>
+          <p>State Distribution</p>
+          <DataChart type={"pie"} data={doughnutChartData4} />
+        </Paper>
+      </Grid>
 
-      <Paper className={scss.dataCard}>
-        <p>Age Distribution</p>
-        <DataChart type={"doughnut"} data={doughnutChartData3} />
-      </Paper>
+      <Grid>
+        <Paper className={scss.dataCard}>
+          <p>Age Distribution</p>
+          <DataChart type={"doughnut"} data={doughnutChartData3} />
+        </Paper>
+      </Grid>
+      <Grid>
+        <Paper className={scss.dataCard}>
+          <p>Perferred Language</p>
+          <DataChart type={"pie"} data={doughnutChartData2} />
+        </Paper>
+      </Grid>
 
-      <Paper className={scss.dataCard}>
-        <p>Perferred Language</p>
-        <DataChart type={"pie"} data={doughnutChartData2} />
-      </Paper>
-      <Paper className={scss.dataCard}>
-        <p>Perferred Language</p>
-        <DataChart type={"pie"} data={doughnutChartData2} />
-      </Paper>
+      <Grid>
+        <Paper className={scss.dataCard}>
+          <p>Perferred Language</p>
+          <DataChart type={"pie"} data={doughnutChartData2} />
+        </Paper>
+      </Grid>
     </Grid>
   );
 };
