@@ -2,7 +2,6 @@ $breakPoint: 1000px;
 
 .wrapper {
   display: flex;
-
 }
 
 .transactions {
@@ -16,11 +15,11 @@ $breakPoint: 1000px;
 }
 
 .chart {
+  max-width: 100%;
   width: 100%;
 
-  padding-right: 2rem;
   @media screen and (min-width: $breakPoint) {
-    max-width: 100%;
+    max-width: 80%;
   }
 }
 
@@ -50,9 +49,9 @@ $breakPoint: 1000px;
 }
 
 .cardTitle p {
-  font-size: 1.8rem;
+  font-size: 1.8rem
 }
 
 .cardValue p {
-  font-size: 1.2rem;
+  font-size: 1.2rem
 }
