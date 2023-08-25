@@ -4,10 +4,7 @@ import { Card, Grid, Paper } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/system";
 import DataChart from "@/components/DataChart";
-import {
-  doughnutChartData1,
-  lineChartData,
-} from "@/components/mockData";
+import { doughnutChartData1, lineChartData } from "@/components/mockData";
 
 export type TransactionCardType = {
   title: string;
@@ -26,14 +23,11 @@ const TransactionsPerDay = () => {
           <DataChart type={"bar"} data={lineChartData} />
         </div>
         <Grid className={scss.bottomRow}>
-          <Grid>
-            <Paper className={scss.dataCard}>
-              <p>Loyalty Status</p>
-              <DataChart type={"doughnut"} data={doughnutChartData1} />
-            </Paper>
-          </Grid>
+          <Paper className={scss.dataCard}>
+            <p>Loyalty Status</p>
+            <DataChart type={"doughnut"} data={doughnutChartData1} />
+          </Paper>
         </Grid>
-     
       </Paper>
     </Grid>
   );
