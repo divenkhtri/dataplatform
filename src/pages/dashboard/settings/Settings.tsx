@@ -16,26 +16,27 @@ const Settings = () => {
   const [showOrders, setShowOrders] = React.useState(true);
   const [showCustomers, setShowCustomers] = React.useState(true);
 
-  const handleShowRevenueChange = (event) => {
+  const handleShowRevenueChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setShowRevenue(event.target.checked);
   };
 
-  const handleShowProfitChange = (event) => {
+  const handleShowProfitChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setShowProfit(event.target.checked);
   };
 
-  const handleShowOrdersChange = (event) => {
+  const handleShowOrdersChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setShowOrders(event.target.checked);
   };
 
-  const handleShowCustomersChange = (event) => {
+  const handleShowCustomersChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setShowCustomers(event.target.checked);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     // TODO: handle form submission
   };
+
   return (
     <>
       <h1>Settings</h1>
@@ -48,7 +49,6 @@ const Settings = () => {
             <Grid item xs={12}>
               <FormControl component="fieldset">
                 <FormGroup>
-
                   <FormControlLabel
                     control={
                       <Switch

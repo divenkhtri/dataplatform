@@ -14,19 +14,20 @@ import {
 
 const Profile = () => {
   const { data: session } = useSession();
-  const names = session.user.name.split(" ");
-  const firstName = names[0];
+
+  const names = session?.user?.name?.split(" ") || [];
+  const firstName = names[0] || "";
   const lastName = names.length > 1 ? names[names.length - 1] : "";
   const [formData, setFormData] = useState({
     firstName: firstName,
     lastName: lastName,
-    email: session?.user?.email,
+    email: session?.user?.email || "",
     password: "",
     confirmPassword: "",
     receiveEmails: false,
   });
 
-  const handleFormChange = (event) => {
+  const handleFormChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, checked } = event.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -34,10 +35,12 @@ const Profile = () => {
     }));
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(formData); // Submit form data to server here
-  };
+const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+  console.log(formData); // Submit form data to server here
+};
+
+
   return (
     <>
       <h1>Profile</h1>

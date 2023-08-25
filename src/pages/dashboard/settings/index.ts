@@ -1,1 +1,1 @@
-export { default asdas} from './Settings';
+export { default } from './Settings';
