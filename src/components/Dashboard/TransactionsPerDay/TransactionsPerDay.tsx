@@ -1,7 +1,8 @@
 import React from "react";
 import scss from "./TransactionsPerDay.module.scss";
+import sscss from '../TransactionBottomRow/TransactionsBottomRow.module.scss'
 import { Card, Grid, Paper } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import Typography from "@mui/material/Typography";[]
 import { useTheme } from "@mui/system";
 import DataChart from "@/components/DataChart";
 import { doughnutChartData1, lineChartData } from "@/components/mockData";
