@@ -12,7 +12,7 @@ import scss from "./TransactionsBottomRow.module.scss";
 
 const TransactionBottomRow = () => {
   return (
-    <Grid container className={scss.bottomRow}>
+    <Grid className={scss.bottomRow}>
       <Grid>
         <Paper className={scss.dataCard}>
           <p>State Distribution</p>

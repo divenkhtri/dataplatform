@@ -5,7 +5,7 @@ import scss from "./DataRibbon.module.scss";
 
 const DataRibbon = () => {
   return (
-    <Grid container gap={2} className={scss.dataRibbon}>
+    <Grid gap={2} className={scss.dataRibbon}>
       <Grid>
         <DataCard
           title={"Overall DQ Score"}
