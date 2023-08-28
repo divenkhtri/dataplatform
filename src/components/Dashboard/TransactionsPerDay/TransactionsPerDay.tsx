@@ -17,7 +17,7 @@ const TransactionsPerDay = () => {
   const theme = useTheme();
 
   return (
-    <Grid gap={2} className={scss.wrapper}>
+    <Grid container gap={2} className={scss.wrapper}>
       <Paper className={scss.transactions}>
         <div className={scss.chart}>
           <Typography>Gender Distribution Per Month</Typography>
