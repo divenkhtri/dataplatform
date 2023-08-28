@@ -7,7 +7,7 @@ import { Accuracy, Completeness, Consistency, Validity } from "@/components/mock
 
 const TransactionBottomRow2 = () => {
   return (
-    <Grid container className={scss.bottomRow2}>
+    <Grid className={scss.bottomRow2}>
       <Grid>
         <Paper className={scss.dataCard2}>
           <p>Completeness</p>
